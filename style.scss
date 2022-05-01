@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  transition: all 0.3s;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  margin: 0;
+  border: none;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+button {
+  background-color: rgb(202, 202, 202);
+  border: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+body {
+  padding: 70px 0;
+  background: no-repeat linear-gradient(#000, #fff);
+  width: 100%;
+  height: 100vh;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  min-height: 50px;
+}
+
+.add {
+  text-align: center;
+  margin-bottom: 20px;
+
+  &__input {
+    background-color: #fff;
+    border-radius: 2px;
+    min-width: 400px;
+    font-size: 22px;
+    padding: 9px 15px;
+  }
+
+  &__button {
+    border-radius: 2px;
+    font-size: 22px;
+    padding: 9px 15px;
+  }
+}
+
+.task {
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 3px;
+
+  &--checked {
+    border: medium solid rgb(20, 249, 58);
+    border-radius: 3px;
+  }
+
+  &__checkbox {
+    background-color: #fff;
+    min-height: 35px;
+    min-width: 35px;
+  }
+
+  &__text {
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    min-width: 300px;
+  }
+
+  &__button {
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 7px 15px;
+  }
+}
+
+.modal {
+  border-radius: 3px;
+  border: thin solid rgb(0, 0, 0);
+  background-color: rgba(78, 77, 77, 0.948);
+  width: 100%;
+  height: 150%;
+  z-index: 10;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__input {
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px 15px;
+    height: 100%;
+    &::placeholder {
+      color: rgb(200, 200, 200);
+    }
+  }
+
+  &__confirm {
+    font-size: 18px;
+    height: 100%;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
